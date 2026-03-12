@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-12T22:33:28.162926",
+    "last_updated": "2026-03-12T23:49:41.851460",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.81"
@@ -62,8 +62,8 @@
       "unavailable": 1
     },
     "phase_context": {
-      "phase": null,
-      "phase_week": 0,
+      "phase": "Deload",
+      "phase_week": 1,
       "amber_threshold": 2,
       "modifier_applied": "default"
     },
@@ -73,9 +73,11 @@
     "alarm_refs": []
   },
   "history": {
-    "available": false,
-    "history_confidence": "low",
-    "note": "No history.json available. Longitudinal analysis limited to current 28-day window."
+    "available": true,
+    "last_generated": "2026-03-12",
+    "age_days": 0,
+    "total_months": 2,
+    "history_confidence": "low"
   },
   "summary": {
     "period_description": "Last 7 days of training (including today)",
@@ -265,18 +267,17 @@
       "note": "No planned workouts in period"
     },
     "phase_detection": {
-      "phase": null,
-      "confidence": "low",
+      "phase": "Deload",
+      "confidence": "medium",
       "reason_codes": [
-        "INSUFFICIENT_LOOKBACK",
-        "INSUFFICIENT_DATA"
+        "PLAN_GAP_NEXT_WEEK"
       ],
       "basis": {
         "stream_1": {
-          "ctl_slope": null,
-          "acwr_trend": null,
-          "hard_day_pattern": null,
-          "weeks_available": 0
+          "ctl_slope": 2.28,
+          "acwr_trend": "falling",
+          "hard_day_pattern": 3,
+          "weeks_available": 4
         },
         "stream_2": {
           "planned_tss_delta": null,
@@ -286,18 +287,17 @@
           "plan_coverage_current_week": 0.0,
           "plan_coverage_next_week": 0.0
         },
-        "data_quality": "poor",
+        "data_quality": "good",
         "stream_agreement": null
       },
-      "previous_phase": null,
-      "phase_duration_weeks": 0,
+      "previous_phase": "Deload",
+      "phase_duration_weeks": 1,
       "dossier_declared": null,
       "dossier_agreement": null
     },
-    "phase_detected": null,
+    "phase_detected": "Deload",
     "phase_triggers": [
-      "INSUFFICIENT_LOOKBACK",
-      "INSUFFICIENT_DATA"
+      "PLAN_GAP_NEXT_WEEK"
     ],
     "seasonal_context": "Late Base / Build",
     "benchmark_indoor": {
@@ -320,7 +320,7 @@
     "p_max": 987,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 58.0,
-    "calculation_timestamp": "2026-03-12T22:33:28.162757",
+    "calculation_timestamp": "2026-03-12T23:49:41.850904",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
